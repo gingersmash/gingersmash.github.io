@@ -1,0 +1,40 @@
+
+@media only screen and (min-width: 64em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+}
+
+.forecast {
+     display:inline-block;
+}
+    
+
+    
+nav {
+    display:-webkit-flex;
+    display:inline-flex
+    padding:.5em;
+}/* show the 10-day forecast with the medium view and up */
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+  
+  
+  
+
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    display:inline;
+    padding: 8px;
+}
+.forecast {
+    display:flex;
+}
+ article p.town-article img {min-width: 29.333%; 
+     width: 100%; /* fill the page in the small/phone view */
+     margin: 0 0 .2rem 2%; width:29.3%;
+}  
+        

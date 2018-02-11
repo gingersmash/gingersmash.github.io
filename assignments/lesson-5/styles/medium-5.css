@@ -1,0 +1,43 @@
+@media only screen and (min-width: 37.5em) {
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+}
+  nav button { display:none; }  /* hamburger button does not need to be shown */
+  
+section.forecast { 
+        display:inline-block;
+}
+    
+    
+
+
+
+  
+ nav {
+    display:-webkit-flex;
+    display:inline-flex;
+    padding:.5em;
+ } 
+/* show the 10-day forecast with the medium view and up */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ li {
+     display: inline;
+     padding: 8px;
+    }
+
+  /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+  
+  nav button { display:none;}  /* hamburger button does not need to be shown */
+  
+ 
+  
+  article p.town-article img { width: 62.666%; height:auto float:right; }  /* responsive images */
+
+
+
+
+
+   
