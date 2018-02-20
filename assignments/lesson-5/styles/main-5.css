@@ -1,4 +1,4 @@
-@media screen and(min-width:28em){}
+@media screen and(min-width:480px){}
    /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
@@ -15,7 +15,7 @@ font-size: 16px;
 header, nav, main, footer {}
         
         /* the comma means apply the following CSS declarations to all of the listed elements */
-  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+        /* Declare the maximum width and other main element rules to limit the stretch on wide views */
 
 
 header {}
@@ -101,7 +101,8 @@ footer {
     text-align:center;
 }
 footer aside {
-   text-align: center;    background-color:#ffa247; 
+   text-align: center;   
+   background-color:#ffa247; 
 }
 footer>p {
     text-align:center;

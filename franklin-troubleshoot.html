@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather Quick</title>
+       <meta name="author" content="Ashley Cammack">
+       <meta name="description" content="weather-franklin">
+  <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet"> <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+
+        
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main-6.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium-6.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large-6.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+
+        <header>
+            <figure class="logo">
+          <img src="images-6/weather-logo.jpg" alt="logo"> 
+            </figure>
+          <h1>Lightning Quick Weather</h1>
+          <div class="subheading">Weather in a Flash!</div>
+        </header>
+
+  <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="#">Home</a></li>
+    	<li class="active"><a href="#">Franklin</a></li>
+    	<li><a href="#">Greenville</a></li>
+    	<li><a href="#">Springfield</a></li>
+    	<li><a href="#">Storm Center</a></li>
+    	<li><a href="#">Gallery</a></li>
+		  
+     </ul>
+		
+   </nav>
+    
+  <main>
+    <h2>Franklin</h2>
+      <figure>
+      <img src="images-6/franklin-2/franklin-original-crop.jpg" alt="field and sky" sizes="100vw" 
+           srcset="images-6/franklin-2/franklin200-ol.jpg 200w,
+                   images-6/franklin-2/franklin500-ol.jpg 500w, 
+                   images-6/franklin-2/franklin800-ol.jpg 800w, 
+                   images-6/franklin-2/franklin1100-ol.jpg 1100w">
+                   
+      </figure>
+    <section>
+      <h3>Weather Summary</h3>    
+      <div class="highlow">
+        <p>High:90°F</p>  
+        <p>Low:66°F</p>  
+      </div>
+      <div class="current">
+        Sunny
+        <picture>
+            <img src="images-6/sunny.jpg" alt="sunny" width="50">
+        </picture>
+      </div>   
+      <div class="conditions">
+        <p>Precipitation:0%</p>  
+        <p>Wind Speed: 5 mpg SW</p>  
+      </div>           
+    </section>
+        
+    <section class="forecast">
+      <h3>10 Day Forecast</h3>
+      <table>
+	    <thead>
+          <tr>
+            <th>Day 1</th>
+            <th>Day 2</th>
+            <th>Day 3</th>
+            <th>Day 4</th>
+            <th>Day 5</th>
+            <th>Day 6</th>
+            <th>Day 7</th>
+            <th>Day 8</th>
+            <th>Day 9</th>
+            <th>Day 10</th>
+          </tr>
+		</thead>
+        <tbody>  
+          <tr>
+            <td>89&deg;F</td>
+            <td>87&deg;F</td>
+            <td>78&deg;F</td>
+            <td>75&deg;F</td>
+            <td>72&deg;F</td>
+            <td>72&deg;F</td>
+            <td>79&deg;F</td>
+            <td>83&deg;F</td>
+            <td>85&deg;F</td>
+            <td>89&deg;F</td>
+          </tr>
+		</tbody>
+      </table>
+    </section>
+      <section class="town-article">
+    <article>
+      <h3>Franklin Breaks Record</h3>
+		
+      <p class="town-article">
+         <img src="images-6/franklin-article-pic.jpeg" alt="Summer sunset over fields" width="">
+              
+        As of today the city of Franklin has had a record number of consecutive days above 90°F. Today was the 15th day of this heat wave, and residents are looking forward to cooler temps to break the miserable heat wave.
+          
+      </p>
+          
+		</article>		  
+  </section>
+  </main>
+    
+  <footer>
+    <aside>
+      Lightning Quick Weather<br>
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (999)999-9999<br>
+        contact@weatherquick.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Quick | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  
+ 		
+   <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+       
+
+</body>
+</html>
