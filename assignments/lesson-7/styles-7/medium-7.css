@@ -32,9 +32,17 @@ nav.container {
 }
 @media only screen and (min-width:35.5em){
 	.forecast { 
-      display:flex;
-	  flex-flow: row;
-	 justify-content: 
+      display:grid;
+	  
+	}
+	.day-row, .temp-row {
+		display:grid;
+		grid-template-columns: 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr;
+		grid-gap: 20px;
+		
+	}
+	
+	
 	
     }  /* show the 10-day forecast with the medium view and up */
 }
