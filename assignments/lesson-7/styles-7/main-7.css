@@ -1,0 +1,162 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+@media screen and (max-width: 37.5em){}
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+
+body {
+  font-size:16px;
+  font-family:"oxygen", sans-serif;
+  padding:1em
+  
+  /* Declare the base font-family - from google font api or other */
+}
+
+header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+  /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {}
+header h1 {
+   font-family:"gabriela", serif;
+   font-size:2.5em;
+   padding:.1em
+}
+header img {
+     width:100px;
+     height:75px;
+     float:left;
+     padding:.5em;
+}
+header .subheading {font-family:"oxygen", sans-serif;
+      font-size:2em;
+      text-align:center;}
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color:#555;
+}
+nav.container {
+    display:flex;
+	flex-direction:column;
+    background-color: #11B9E0;
+    
+    
+}
+
+
+    
+nav ul {
+    list-style-type: none;
+	padding: 0;
+    margin: 0;
+    
+}
+
+    
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+	background-color: #11B9E0;
+    display:flex;
+	padding: .8rem 2%;
+    margin:0;
+	border-top: 1px solid rgba(0,0,0,0.3);
+}
+nav ul li.active a {background-color: rgba(0,0,0,0.2);}
+nav ul li a:hover {background-color: rgba(0,0,0,0.1);}
+nav ul.hide{display: none;}
+main {
+    padding: 0;
+}
+main h2 {
+    font-family:"ultra",serif;
+    color:#007523;
+    text-align:center;}
+main h3 {
+    color:#ff850D;
+}
+
+main figure { margin: 0 0 .2rem 2%; width:96%; }
+main figure img { width: 100%; }
+
+
+.forecast {
+    display: none;
+}
+.windchill {
+	display: flex;
+	padding: 1rem;
+	
+}
+.button {
+	background-color: #ff850d;
+}
+.factorText {
+	
+	padding: 1em;
+	}
+
+#windSpeed {
+   	display:flex;
+	border:1px solid #bbeedd;
+	background-color:#ffeecc;
+	text-align:center;
+	size:1px;
+}
+section {
+	
+}
+
+.town-article {
+    display:flex;
+	flex-flow: flex-wrap;
+	flex-wrap: wrap;
+	
+}
+@media only screen and (max-width: 80em){
+article p.town-article img {
+	display: flex;
+	flex-flow: column;
+	flex-wrap: wrap-reverse;
+}
+} 
+
+footer {}
+footer aside {
+     text-align: center;   
+   background-color:#ffa247;
+}
+footer>p {
+      background-color:#11B9E0;
+} /* This structure refers to p elements that are direct children of the footer element */
+.clearfix:after{
+	content: "";
+	display: table;
+	clear: both;
+}
+
+
+/* ***********Gallery******** */
+
+@media screen and (max-width:37.5em){}
+.gallery {
+	display: grid;
+	grid-template-columns:100%;
+	grid-auto-rows:minmax(100px, auto);
+	
+	
+	
+		
+}
+
+fig-caption {
+	font-size: 12px;
+
+} 
+
+
+
+
