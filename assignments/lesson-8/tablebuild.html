@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <title>Tablebuild</title>
     <link href="tablebuild.css" rel="stylesheet" type="text/css">
+	 <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
   </head>
   <body>
 	  <table>
-		  <caption><strong>ACME Wildwest</strong></caption>
+		  <thead colspan="3">
+		  	<caption><strong>ACME Wildwest</strong></caption>
+		  </thead>
+		  <tbody>
 		    <tr id="headings">
 		      <th>Period</th>
 			  <th>Sales</th>
@@ -42,8 +46,10 @@
 		    <td>$6,820</td>
 		    <td>$7,500</td>
 		  </tr>
+	</tbody>
+		<tfoot>
 		  <td colspan="3" id="footer">Compiled 12.20.2020 by bRauls</td>
-		  
+		</tfoot>
 	  </table>
   </body>
 </html>
