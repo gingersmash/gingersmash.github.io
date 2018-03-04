@@ -1,0 +1,38 @@
+@media only screen and (min-width: 64rem) {
+  /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+	nav {}
+        
+    nav ul li a{padding: .6rem 1rem;}
+     /* hamburger button does not need to be shown */
+   
+}
+   
+   
+@media only screen and (min-width: 64rem){
+	figure.town-article img {
+		display: block;
+		width="29%";
+		height="auto";
+	}
+}	  
+
+
+   
+
+	
+	
+ 
+
+
+
+/**************************************Gallery***********************************************/
+@media only screen and (min-width: 64rem) and (max-width:50%){
+	.gallery {
+	display:grid;
+	grid-template-columns:33.3% 33.3% 33.3%;
+	}
+	.gallery figure:hover {box-shadow:7px 10px #777;}
+	}
+	
+
+/*********Storm Center*****************/

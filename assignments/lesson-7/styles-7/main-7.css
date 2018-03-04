@@ -116,7 +116,7 @@ section {
 	flex-wrap: wrap;
 	
 }
-@media only screen and (max-width: 80em){
+@media only screen and (max-width:37.5em){
 article p.town-article img {
 	display: flex;
 	flex-flow: column;

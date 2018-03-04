@@ -7,10 +7,10 @@ table {
 	box-shadow: 10px 10px 10px #628ca6;
 	}
 
-}
+
 tbody tr:nth-child(odd) {
 	background-color: #e7ffed;
-	border-color: 1px lightgray solid;
+	border: 1px lightgray solid;
 }
 tbody tr:nth-child(even) {
 	background-color: #e7f0ed

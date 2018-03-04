@@ -41,8 +41,10 @@ nav.container {
 		grid-gap: 20px;
 		
 	}
-	
-	
+	.temp-row {
+		display:grid;
+		grid-template-columns: 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr;
+	}
 	
     }  /* show the 10-day forecast with the medium view and up */
 }
