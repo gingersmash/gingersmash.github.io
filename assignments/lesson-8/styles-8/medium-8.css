@@ -50,7 +50,7 @@ nav.container {
 
 
 @media screen and (min-width:37.6em) and (max-width:63rem){
-  article p.town-article img { 
+  article figure.town-article img { 
       width: 50%; 
       height:50%;
      }  /* responsive images */
