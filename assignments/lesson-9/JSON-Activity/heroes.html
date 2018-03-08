@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our superheroes</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Bungee+Shade" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+		//store the URL of the JSON we want to retrieve in a var.
+    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/superheroes.json';
+		
+		//create a new request object instance from the XMLHttpRequest constructor, use "new" keyword.
+	var request = new XMLHttpRequest();
+		//open a new request using the 'open()' method
+    request.open('GET', requestURL);
+		//set the 'responseType' to JSON, so XHR know that the server will be returning JSON.(this should be converterd behind the scenes into javascript object)
+    request.responseType = 'json';
+		//send request using 'send()' method.
+    request.send();
+		//store response to request in a variable. in this case superHeroes. This will contain the javascript object based on the JSON.
+    request.onload = function() {
+      var superHeroes = request.response;
+		//pass object to two function calls:
+		//fills <header> with correct data.
+      populateHeader(superHeroes);
+		//create an info card for each hero on the team, and insert it into the <section>.
+      showHeroes(superHeroes);
+    }
+	
+//Populate the header:
+		
+		//call jsonObj parameter to remind us that js object originated from JSON--Create an <h1> element using 'createElement()', set its textContent to equal the squadName property of object then append it ot the header.
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['squadName'];
+      header.appendChild(myH1);
+		// paragraph: create, set text content, append to header. text is set to conctenated string containing both the 'homeTown' and 'formed' properties of object.	 
+      var myPara = document.createElement('p');
+      myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+      header.appendChild(myPara);
+    }
+		
+//Create hero info. cards
+	//create and display superhero cards	
+    function showHeroes(jsonObj) {
+      var heroes = jsonObj['members'];
+		//create new elements <article>, <h2>, 3<p>'s, <ul> - 'for' loop
+      for(var i = 0; i < heroes.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
+		  //fill paragraphs with secretIdentity, age, line saying superheroes.
+        myH2.textContent = heroes[i].name;
+        myPara1.textContent = 'Secret identity: ' + heroes[i].secretIdentity;
+        myPara2.textContent = 'Age: ' + heroes[i].age;
+        myPara3.textContent = 'Superpowers:';
+		  
+		  //store powers in new variable 'superPowers' - contains array listing current hero's power's 
+        var superPowers = heroes[i].powers;
+		  //create a 'for' loop to loop thru current hero's super powers.
+        for(var j = 0; j < superPowers.length; j++) {
+		    	//create <li> for ea.-put super hero inside, then put the listItem insdie the <ul> (mylist) using appendChild().
+            var listItem = document.createElement('li');
+          	listItem.textContent = superPowers[j];
+         	 myList.appendChild(listItem);
+        }
+		  //append the <h2>, <p>'s, and <ul> inside the <article>(myArticle), then append the <article> insdie the <section>. Order in which appended is important-this is the order tehy will be displayed inside the HTML.		
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+        section.appendChild(myArticle);
+      }
+    }
+    </script>
+  </body>
+</html>
