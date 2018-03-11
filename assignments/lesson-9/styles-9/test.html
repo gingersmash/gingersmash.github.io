@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <title>Our townInfo</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Faster+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+
+      <header>
+
+      </header>
+
+      <section>
+
+      </section>
+
+    <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+    var requestURL = 'https://mdn.github.io/learning-area/javascript/oojs/json/townInfo.json';
+    var request = new XMLHttpRequest();
+    request.open('GET', requestURL);
+    request.responseType = 'json';
+    request.send();
+    request.onload = function() {
+      var townInfo = request.response;
+      populateHeader(townInfo);
+      showTownInfo(townInfo);
+    }
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['squadName'];
+      header.appendChild(myH1);
+      var myPara = document.createElement('p');
+      myPara.textContent = 'Hometown: ' + jsonObj['homeTown'] + ' // Formed: ' + jsonObj['formed'];
+      header.appendChild(myPara);
+    }
+    function showTownInfo(jsonObj) {
+      var townName = jsonObj['towns'];
+      for(var i = 0; i < townName.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
+        myH2.textContent = townName[i].name;
+        myPara1.textContent = 'Motto: ' + townName[i].motto;
+        myPara2.textContent = 'Year Founded: ' + townName[i].yearFounded;
+        myPara3.textContent = 'Current Population:';
+        var currentPopulation = townName[i].powers;
+        for(var j = 0; j < currentPopulation.length; j++) {
+          var listItem = document.createElement('li');
+          listItem.textContent = currentPopulation[j];
+          myList.appendChild(listItem);
+        }
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+        section.appendChild(myArticle);
+      }
+    }
+    </script>
+  </body>
+</html>
