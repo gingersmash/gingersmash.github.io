@@ -22,9 +22,7 @@ request.onload = function() {
 	 
 	document.getElementById('events').innerHTML = townInfo;
 	
-	
-	
-	
+		
 }//end of onload
 
 request.send(); 
