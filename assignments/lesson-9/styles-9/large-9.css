@@ -8,13 +8,7 @@
 }
    
    
-@media only screen and (min-width: 64rem){
-	figure.town-article img {
-		display: block;
-		width="29%";
-		height="auto";
-	}
-}	  
+
 
 
    
@@ -26,13 +20,21 @@
 
 
 /**************************************Gallery***********************************************/
-@media only screen and (min-width: 64rem) and (max-width:50%){
+@media only screen and (min-width: 64rem) {
 	.gallery {
 	display:grid;
 	grid-template-columns:33.3% 33.3% 33.3%;
-	}
-	.gallery figure:hover {box-shadow:7px 10px #777;}
+	grid-template-rows: auto;	
 	}
 	
+	.gallery figure:hover {box-shadow:7px 10px #777;}
+	}
+
+
+	
+		
+
+
+ 
 
 /*********Storm Center*****************/

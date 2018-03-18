@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather Quick</title>
+       <meta name="author" content="Ashley Cammack">
+       <meta name="description" content="storm-center">
+  <!-- external style references in the proper cascading order -->    
+        <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+        
+		
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+		
+
+
+        
+		<header>
+            <figure class="logo">
+          <img src="images/weather-logo.jpg" alt="logo"> 
+            </figure>
+          <h1>Lightning Quick Weather</h1>
+          <div class="subheading">Weather in a Flash!</div>
+        </header>
+
+  <!-- site navigation use placeholder references -->
+    <nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="mainmenu" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li class=""><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li><a href="gallery.html">Gallery</a></li>
+     </ul>		
+   </nav>
+    
+  <main>
+	   <h2>Storm Center</h2>
+	  <form action="thanks.html" method=""  name="stormcenter" id="stormInfo">
+		 <fieldset>
+			<legend><span>Personal Information</span></legend>
+			   <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z .-]{5,99}" required></label>
+			   <label><span>email:</span><input name="email" type="email" value="" placeholder="john@google.com" required></label>
+			   <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="2345677890" required></label>
+			   <label><span>Zip Code:</span><input required name="zipcode" type="number" value="" placeholder="" ></label>
+			
+			
+		  </fieldset>
+		<fieldset>
+		   <legend><span>Storm Information</span></legend>
+		  	   <label><span>Storm Date:</span><input name="stormdate" type="date" value=""></label>
+		 
+			
+			   <label><span>Storm Type:</span><input type="text" name="stormtype" list="types">
+			      <datalist id="types">
+					  <option value="Flash Flood"></option>
+					  <option value="Hail"></option>
+					  <option value="Hurricane"></option>
+					  <option value="Thunderstorm"></option>
+					  <option value="Tornado"></option>
+				   </datalist>
+			   </label>
+				
+		 
+			<label for="rating" class="rating">Storm Severity (1 to 10):</label>
+		
+			  <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+			    <span id="ratingvalue">5</span><br>
+			<label><span>Storm Region:</span><input type="select" name="region" list="regions">
+				<datalist id=regions>
+					<option value="Franklin"></option>
+					<option value="Greenville"></option>
+					<option value="Springfield"></option>
+				</datalist>
+			</label>
+			<label><span>User In-Danger Level:<br></span></label>
+			  <input type="radio" name="indanger" value="yes">Yes<br>
+			  <input type="radio" name="indanger" value="no">No<br>
+			  <input type="radio" name="indanger" value="maybe">Maybe
+		 </fieldset>
+	  	<fieldset>
+		  <legend>Additional Information/Comments</legend>
+			 <textarea form="stormInfo"></textarea>
+	    </fieldset>
+		   
+		   <input type="submit" value="Submit" class="submitbtn">
+		  
+	  </form>
+  
+   
+	  
+        
+   
+	  	
+  
+  </main>
+    
+  <footer>
+    <aside>
+      Lightning Quick Weather<br>
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (999)999-9999<br>
+        contact@weatherquick.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Quick | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  
+	
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+  <script src="scripts/severityscale.js"></script>
+
+</body>
+	<script src="scripts/wayfinding.js"></script>
+</html>

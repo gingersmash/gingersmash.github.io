@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Weather Quick</title>
+       <meta name="author" content="Ashley Cammack">
+       <meta name="description" content="weather-gallery">
+  <!-- Google Fonts -->    
+        <link href="https://fonts.googleapis.com/css?family=Gabriela" rel="stylesheet"> 
+        <link href="https://fonts.googleapis.com/css?family=Oxygen" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Ultra" rel="stylesheet">
+   <!--CSS style sheet links-->
+        <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+        <link href="styles/main.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+    </head>
+    <body>
+	  <header>
+           <figure class="logo">
+          	  <img src="images/weather-logo.jpg" alt="logo"> 
+            </figure>
+          <h1>Lightning Quick Weather</h1>
+          <div class="subheading">Weather in a Flash!</div>
+        </header>
+
+  <!-- site navigation use placeholder references -->
+    <nav class="clearfix" class="container">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="primaryNav" class="hide">
+    	<li><a href="index.html">Home</a></li>
+    	<li ><a href="franklin.html">Franklin</a></li>
+    	<li><a href="greenville.html">Greenville</a></li>
+    	<li><a href="springfield.html">Springfield</a></li>
+    	<li><a href="stormcenter.html">Storm Center</a></li>
+    	<li class="active"><a href="gallery.html">Gallery</a></li>
+     </ul>		
+   </nav>
+    
+  <main>
+    <h2>Gallery</h2>
+	
+	  <div class="gallery">
+		 
+		  <figure class="ice"><img src="images/gallery/ice_storm.jpeg" alt="icy storm aftermath on branches">
+				<fig-caption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</fig-caption> 
+	  	</figure>
+		  
+		  <figure class="lightning"><img src="images/gallery/lightning_sky.jpeg" alt="lightning sky">
+		  		<fig-caption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</fig-caption>
+		  </figure>
+        
+		  <figure class="spring"><img src="images/gallery/spring_skies.jpeg" alt="spring blossoms under blue sky and wispy clouds">		   
+				<fig-caption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</fig-caption>
+		  </figure>
+     	
+		  <figure class="clouds"><img src="images/gallery/storms_a_brewin.jpeg" alt="sunset reflection off storm clouds">
+		  		<fig-caption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</fig-caption>
+		  </figure>
+   		
+		  <figure class="beach"><img src="images/gallery/stormy_beach.jpeg" alt=" windy beach, palm trees swaying">
+		  		<fig-caption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</fig-caption>
+		  </figure>
+		  
+	  	<figure  class="waves"><img src="images/gallery/tsunami.jpeg" alt="huge waves crash on shore">
+		  	<fig-caption>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.</fig-caption>
+	  </figure>
+		  
+	  </div>
+	
+  </main>
+    
+  <footer>
+    <aside>
+      Lightning Quick Weather<br>
+        123 Main St.<br>
+        Franklin, MU 83454<br>
+        (999)999-9999<br>
+        contact@weatherquick.com
+    </aside>
+    <p class="footer-bar">&copy;2018 All Rights Reserved | Weather Quick | <span id="currentdate">Current Date Placeholder</span></p>
+  </footer>
+
+  
+	
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+  <script src="scripts/windchill.js"></script>
+      
+
+</body>
+</html>

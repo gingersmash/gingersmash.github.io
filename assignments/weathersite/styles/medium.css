@@ -1,0 +1,85 @@
+/* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+       
+@media only screen and (min-width: 37.5em) {
+	
+nav.container {
+	display:-webkit-flex;
+	display:flex;
+	padding: 0;
+	font-size:.8em;
+	
+	}
+	/* hamburger button does not need to be shown */
+	nav button {display:none;}  
+	
+	nav ul.hide {display:flex;}
+	
+	nav ul {
+		margin-left: 2%;
+		padding:0;
+		border: none;
+	   }
+	
+	nav ul li {
+			flex-flow:row;			
+		}
+		
+    nav ul li a {
+		border:none;
+		border-right: 1px solid rgba(0,0,0,0.3);
+        padding: .8rem 1rem;
+	   }  
+}
+@media only screen and (min-width:37.5em){
+	.forecast { 
+      display:grid;
+	  
+	}
+	.day-row, .temp-row {
+		display:grid;
+		grid-template-columns: 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr;
+		grid-gap: 20px;
+		
+	}
+	.temp-row {
+		display:grid;
+		grid-template-columns: 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr 30fr;
+	}
+	
+    }  /* show the 10-day forecast with the medium view and up */
+
+
+@media screen and (min-width:37.6em){
+	article figure {
+		width: 50%;
+		margin: 0 0 0 2%
+	}
+  article figure.town-article img {
+	  width: 100%; 
+	}/*endtown article img*/
+     }  /* responsive images */
+
+
+
+/* ***********Gallery******** */
+@media screen and (min-width:37.5em) and (max-width:63rem){
+.gallery {
+	display: grid;
+	grid-template-columns:50% 50%;
+	grid-template-rows: auto;
+		
+}
+
+.gallery p {
+	font-size: 12px;
+
+} 
+	
+	
+	
+	/*----Greenville-----*/
+	
+	
+	
+	
+	/*----Springfield-----*/
