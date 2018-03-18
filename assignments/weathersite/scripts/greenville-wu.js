@@ -1,41 +1,7 @@
-/*---Events-----*/
-var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-var request = new XMLHttpRequest();
-request.open('GET', requestURL, true);
-
-request.onload = function() {
-	var townObject = JSON.parse(request.responseText);
-	var townInfo = '<br>';
-		
-			townInfo += 'Name: ' + townObject.towns[1].name +'<br>';
-			townInfo += 'Motto: ' + townObject.towns[1].motto +'<br>';
-			townInfo += 'Year Founded: ' + townObject.towns[1].yearFounded +'<br>';
-			townInfo += 'Population: ' + townObject.towns[1].currentPopulation + '<br>';
-			townInfo += 'Annual Rainfall: ' + townObject.towns[1].averageRainfall + '<br>';
-			
-		for (i = 0; i<townObject.towns.length; i++) {
-			townInfo += townObject.towns[1].events[i] + '<br>';
-		}//end of 'for' loop
-		//townInfo += '<br>' + '<br>';
-	console.log(townObject);
-	
-	
-	 
-	document.getElementById('events').innerHTML = townInfo;
-	
-	
-	
-	
-}//end of onload
-
-request.send(); 
-
-
-
 //wu-information
 
 //observation
-/*
+
 var requestURL = 'http://api.wunderground.com/api/2a31b8649cea9b36/conditions/q/TX/greenville.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
@@ -61,7 +27,7 @@ request.send();
 
 
 //forecast
-
+/*
 var requestURL_1 = 'http://api.wunderground.com/api/2a31b8649cea9b36/forecast/q/TX/greenville.json';
 var request_1 = new XMLHttpRequest();
 request_1.open('GET', requestURL_1, true);
