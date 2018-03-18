@@ -30,7 +30,7 @@
         </header>
 
   <!-- site navigation use placeholder references -->
-    <nav class="clearfix" class="container">
+    <nav class="clearfix" >
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="mainmenu" class="hide">
     	<li><a href="index.html">Home</a></li>
@@ -48,29 +48,30 @@
       <img src="images/franklin/franklin0-ps6-.jpg" alt="field and sky" sizes="50vw" 
            srcset="images/franklin/franklin200.jpg 200w,
 				   images/franklin/franklin500.jpg 500w, 
-                   images/franklin/franklin800.jpg 800w
+                   images/franklin/franklin800.jpg 800w,
 		   		   images/franklin/franklin1200.jpg 1200w">
                    
       </figure>
+	  
     <section>
 		
       <h3>Weather Summary</h3>    
       <div class="highlow">
-		  <p>High: <span id='hiTemp'></span>&degF</p>  
-        <p> Low: <span id="loTemp"></span>&degF</p>  
+		  <p>High: <span id='hiTemp'></span>&deg;F</p>  
+        <p> Low: <span id="loTemp"></span>&deg;F</p>  
       </div>
       <div class="current">
-		  <p>Current Temperature: <span id='currentTemp'></span>&degF</p>
+		  <p>Current Temperature: <span id='currentTemp'></span>&deg;F</p>
         
         
       </div>   
       <div class="conditions">
 		  <p>Current Conditions: <span id='currentConditions'></span></p>
-		  <picture><img src="http://icons.wxug.com/i/c/k/nt_cloudy.gif"><span id='imgIcon'></span></picture>
+		  <div><span id='imgIcon'></span></div>
 		  <p><span id='textForecast'></span></p>
         <p>Precipitation: <span id='pop'></span>%</p>  
         <p>Wind Speed: <span id='windSpeed'>5 mpg SW</span></p> 
-		<p>Wind Chill: <span id='windChill'></span>&degF</p>
+		<p>Wind Chill: <span id='windChill'></span>&deg;F</p>
       </div>           
     </section>
         
@@ -93,25 +94,25 @@
 		</thead>
         <tbody>  
           <tr class="temp-row">
-            <td><span id='day0hi'></span>&degF / <span id='day0lo'>
+            <td><span id='day0hi'></span>&deg;F / <span id='day0lo'>
 			</span>&deg;F</td>
-            <td><span id='day1hi'></span>&degF / <span id='day1lo'>
+            <td><span id='day1hi'></span>&deg;F / <span id='day1lo'>
 			</span>&deg;F</td>
-            <td><span id='day2hi'></span>&degF / <span id='day2lo'>
+            <td><span id='day2hi'></span>&deg;F / <span id='day2lo'>
 			</span>&deg;F</td>
-            <td><span id='day3hi'></span>&degF / <span id='day3lo'>
-			</span>&degF</td>
-            <td><span id='day4hi'></span>&degF / <span id='day4lo'>
-			</span>&degF</td>
-            <td><span id='day5hi'></span>&degF / <span id='day5lo'>
+            <td><span id='day3hi'></span>&deg;F / <span id='day3lo'>
 			</span>&deg;F</td>
-            <td><span id='day6hi'></span>&degF / <span id='day6lo'>
+            <td><span id='day4hi'></span>&deg;F / <span id='day4lo'>
 			</span>&deg;F</td>
-            <td><span id='day7hi'></span>&degF / <span id='day7lo'>
+            <td><span id='day5hi'></span>&deg;F / <span id='day5lo'>
 			</span>&deg;F</td>
-            <td><span id='day8hi'></span>&degF / <span id='day8lo'>
+            <td><span id='day6hi'></span>&deg;F / <span id='day6lo'>
 			</span>&deg;F</td>
-            <td><span id='day9hi'></span>&degF / <span id='day9lo'>
+            <td><span id='day7hi'></span>&deg;F / <span id='day7lo'>
+			</span>&deg;F</td>
+            <td><span id='day8hi'></span>&deg;F / <span id='day8lo'>
+			</span>&deg;F</td>
+            <td><span id='day9hi'></span>&deg;F / <span id='day9lo'>
 			</span>&deg;F</td>
           </tr>
 		</tbody>
@@ -133,12 +134,11 @@
 	
       <p class="town-article">
          <figure>
-      		<img src="images/franklin-article-pic.jpeg" alt="Summer-sunset-over-fields" sizes="100vw">
+      		<img src="images/franklin-article-pic.jpeg" alt="Summer-sunset-over-fields">
          </figure>
               
-        As of today the city of Franklin has had a record number of consecutive days above 90°F. Today was the 15th day of this heat wave, and residents are looking forward to cooler temps to break the miserable heat wave.
-          
-      </p>
+        <p>As of today the city of Franklin has had a record number of consecutive days above 90°F. Today was the 15th day of this heat wave, and residents are looking forward to cooler temps to break the miserable heat wave.
+        </p>
           </div>
 		</article>		  
   
@@ -166,7 +166,7 @@
   <!--<script src="scripts-9/severityscale.js"></script>-->
   <!--<script src="scripts-9/wu-weather.js"></script>-->
   <script src="scripts/franklinEvents.js"></script>
-
+  <script src="scripts/wayfinding.js"></script>
 </body>
-	<script src="scripts/wayfinding.js"></script>
+	
 </html>
