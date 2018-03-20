@@ -292,8 +292,10 @@ p.thanks {
 /**Town Information**/
 
 .townInfo {
-	display:inline-grid;
-	flex-direction: row;
+	display:grid;
+	grid-template-columns: 33.3% 33.3% 33.3%;
+	grid-template-rows: auto;
+	
 	align-content: center;
 	flex-wrap: wrap;
 	border: solid 3px #11B9E0 ;
@@ -307,6 +309,6 @@ p.thanks {
 	align-content: space-around;
 }
 
-
+/*
 
 

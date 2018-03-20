@@ -7,7 +7,7 @@ nav.container {
 	display:flex;
 	padding: 0;
 	font-size:.8em;
-	justify-content: space-between;
+	
 		
 	
 	}
@@ -18,8 +18,10 @@ nav.container {
 	
 	nav ul {
 		margin-left:inherit;
-		padding: 0;
+		padding: 1em;
 		border: none;
+		justify-content: space-around;
+		
 	   }
 	
 	nav ul li {
