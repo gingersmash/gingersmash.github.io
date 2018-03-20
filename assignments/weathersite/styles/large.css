@@ -2,7 +2,15 @@
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 	nav {}
         
-    nav ul li a{padding: .6rem 1rem;}
+    nav ul li a{
+		padding: .4rem 1rem;
+		margin: auto;
+		display: flex;
+		align-content: center;
+		
+		
+		
+	}
      /* hamburger button does not need to be shown */
 	article p.town-article img {
 	margin:0 0 0 2%;

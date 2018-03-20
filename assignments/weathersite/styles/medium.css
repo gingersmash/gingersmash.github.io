@@ -7,6 +7,8 @@ nav.container {
 	display:flex;
 	padding: 0;
 	font-size:.8em;
+	justify-content: space-between;
+		
 	
 	}
 	/* hamburger button does not need to be shown */
@@ -15,19 +17,22 @@ nav.container {
 	nav ul.hide {display:flex;}
 	
 	nav ul {
-		margin-left: 2%;
-		padding:0;
+		margin-left:inherit;
+		padding: 0;
 		border: none;
 	   }
 	
 	nav ul li {
-			flex-flow:row;			
+			flex-flow:row;
+			flex-grow: 
+			
 		}
 		
     nav ul li a {
 		border:none;
 		border-right: 1px solid rgba(0,0,0,0.3);
         padding: .8rem 1rem;
+		align-items: center;
 	   }  
 }
 @media only screen and (min-width:37.5em){
