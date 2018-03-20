@@ -34,7 +34,7 @@ request.send();
 
 //observation
 
-var requestURL = 'http://api.wunderground.com/api/2a31b8649cea9b36/conditions/q/OR/springfield.json';
+var requestURL = 'https://api.wunderground.com/api/2a31b8649cea9b36/conditions/q/OR/springfield.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 
@@ -60,7 +60,7 @@ request.send();
 
 //forecast
 
-var requestURL_1 = 'http://api.wunderground.com/api/2a31b8649cea9b36/forecast/q/OR/springfield.json';
+var requestURL_1 = 'https://api.wunderground.com/api/2a31b8649cea9b36/forecast/q/OR/springfield.json';
 var request_1 = new XMLHttpRequest();
 request_1.open('GET', requestURL_1, true);
 
@@ -87,7 +87,7 @@ request_1.send();
 
 
 //10 day forecast - forecast10day
-var requestURL_2 = 'http://api.wunderground.com/api/2a31b8649cea9b36/forecast10day/q/OR/springfield.json';
+var requestURL_2 = 'https://api.wunderground.com/api/2a31b8649cea9b36/forecast10day/q/OR/springfield.json';
 
 var request_2 = new XMLHttpRequest();
 request_2.open('GET', requestURL_2, true);
