@@ -57,12 +57,16 @@ nav.container {
 
 
 @media screen and (min-width:37.6em){
-	article figure {
+ .container {
+	 	display: flex;
 		width: 50%;
-		margin: 0 0 0 2%
+	 	flex-wrap: wrap;
+		margin: 0 0 0 2%;
 	}
-  article figure.town-article img {
-	  width: 100%; 
+  .townarticle img {
+	  width: 100%;
+	  
+	   
 	}/*endtown article img*/
      }  /* responsive images */
 
