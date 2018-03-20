@@ -34,7 +34,7 @@ request.send();
 
 //observation
 
-var requestURL = 'https://api.wunderground.com/api/2a31b8649cea9b36/conditions/q/OR/springfield.json';
+var requestURL = '//api.wunderground.com/api/2a31b8649cea9b36/conditions/q/OR/springfield.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 
@@ -49,8 +49,15 @@ request.onload = function() {
 	
 	document.getElementById('windChill').innerHTML =franklinWeather.current_observation.windchill_f;
 	
-	document.getElementById('imgIcon').innerHTML ='<img src="' + franklinWeather.current_observation.icon_url + '">';
+var icon_path = weatherInfo.current_observation.icon_url;
 	
+	var urlString =document.location.href;
+	console.log(urlString);
+	var found = urlString.indexOf("https");
+	console.log(found);
+	if(found>=0){
+		icon_path = icon_path.replace("http","https");
+	document.getElementById("weather_icon").src = icon_path;
 	
 }//end of onload
 
@@ -60,7 +67,7 @@ request.send();
 
 //forecast
 
-var requestURL_1 = 'https://api.wunderground.com/api/2a31b8649cea9b36/forecast/q/OR/springfield.json';
+var requestURL_1 = '//api.wunderground.com/api/2a31b8649cea9b36/forecast/q/OR/springfield.json';
 var request_1 = new XMLHttpRequest();
 request_1.open('GET', requestURL_1, true);
 
@@ -87,7 +94,7 @@ request_1.send();
 
 
 //10 day forecast - forecast10day
-var requestURL_2 = 'https://api.wunderground.com/api/2a31b8649cea9b36/forecast10day/q/OR/springfield.json';
+var requestURL_2 = '//api.wunderground.com/api/2a31b8649cea9b36/forecast10day/q/OR/springfield.json';
 
 var request_2 = new XMLHttpRequest();
 request_2.open('GET', requestURL_2, true);
