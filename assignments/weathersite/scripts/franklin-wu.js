@@ -23,12 +23,13 @@ request.onload = function() {
 	
 	var urlString =document.location.href;
 	console.log(urlString);
-	var  found = urlString.indexOf("https");
+	var found = urlString.indexOf("https");
 	console.log(found);
+	if(found>=0){
+		icon_path = icon_path.replace("http","https");
 	document.getElementById("weather_icon").src = icon_path;
 	
-		if(found>=0){
-		icon_path = icon_path.replace("http","https");
+		
 	}
 	
 	
