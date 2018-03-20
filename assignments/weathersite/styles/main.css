@@ -87,12 +87,18 @@ main figure img { width: 100%; }
 
 
 .weatherSum  {
+	display:flex;
 	border: 4px solid #11B9E0;
+	padding: 1em 1em 1em 1em;
+}
+.highlow {
+	padding: 1em 1em 1em 1em;
 }
 .forecast {
     display: none;
 	border:
 }
+
 .windchill {
 	display: flex;
 	padding: 1rem;
@@ -104,7 +110,7 @@ main figure img { width: 100%; }
 
 .day-row, .temp-row {
 	
-border: 2px solid #11B9E0
+border: 4px solid #11B9E0
 }
 
 .factorText {
