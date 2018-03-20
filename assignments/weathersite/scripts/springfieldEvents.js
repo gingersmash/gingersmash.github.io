@@ -50,15 +50,7 @@ request.onload = function() {
 	
 	document.getElementById('windChill').innerHTML =franklinWeather.current_observation.windchill_f;
 	
-var icon_path = weatherInfo.current_observation.icon_url;
-	
-	var urlString =document.location.href;
-	console.log(urlString);
-	var found = urlString.indexOf("https");
-	console.log(found);
-	if(found>=0){
-		icon_path = icon_path.replace("http","https");
-	document.getElementById("weather_icon").src = icon_path;
+document.getElementById('imgIcon').innerHTML ='<img src="' + franklinWeather.current_observation.icon_url + '">';
 	
 }//end of onload
 
