@@ -35,7 +35,7 @@ request.send();
 
 //observation
 
-var requestURL = '//api.wunderground.com/api/2a31b8649cea9b36/conditions/q/OR/springfield.json';
+/*var requestURL = '//api.wunderground.com/api/2a31b8649cea9b36/conditions/q/OR/springfield.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
 
@@ -138,4 +138,4 @@ request_2.onload = function() {
 	
 }//end of onload_2
 
-request_2.send();
+request_2.send();*/
