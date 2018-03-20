@@ -24,7 +24,7 @@ request.onreadystatechange = function() {
 	document.getElementById('events').innerHTML = townInfo;
 	
 	
-	
+	}//end of if
 	
 }//end of onload
 

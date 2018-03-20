@@ -16,11 +16,10 @@
         <link href="styles/medium.css" rel="stylesheet">  <!-- medium/tablet views -->
         <link href="styles/large.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
     </head>
-    <body>
-		
-
-
-        
+   
+	
+	<body>
+	     
 		<header>
             <figure class="logo">
           <img src="images/weather-logo.jpg" alt="logo"> 
@@ -30,7 +29,7 @@
         </header>
 
   <!-- site navigation use placeholder references -->
-    <nav class="clearfix" class="container">
+    <nav class="clearfix">
       <button onclick="toggleMenu()">&#9776;</button>
       <ul id="mainmenu" class="hide">
     	<li><a href="index.html">Home</a></li>
@@ -51,7 +50,7 @@
                   images/springfield/springfield1028.jpg 1028w">
                    
       </figure>
-    <section>
+    <section class="weatherSum">
        <h3>Weather Summary</h3>    
       <div class="highlow">
 		  <p>High: <span id='hiTemp'></span>&deg;F</p>  
@@ -64,7 +63,9 @@
       </div>   
       <div class="conditions">
 		  <p>Current Conditions: <span id='currentConditions'></span></p>
-		  <picture><img src="http://icons.wxug.com/i/c/k/nt_cloudy.gif"><span id='imgIcon'></span></picture>
+		  
+		  <img src="images/placeholder.png" alt="current weather" id="weather_icon">
+		  
 		  <p><span id='textForecast'></span></p>
         <p>Precipitation: <span id='pop'></span>%</p>  
         <p>Wind Speed: <span id='windSpeed'>5 mpg SW</span></p> 
@@ -121,15 +122,14 @@
 			<div id ="output" class = "factorText"></div>
 		  </div>
 	  </section>-->
-	  <section>
-    <article class="container">
+	  
+   
 		
        <section>
 	  <h3>Springfield Upcoming Events:</h3>
 	  <div id='events'></div>
 	  </section>
-	  
-              
+	     <article class="container">         
     </article>		  
   
   </main>
@@ -154,7 +154,7 @@
   <!--<script src="scripts-9/wu-weather.js"></script>-->
   <script src="scripts/springfieldEvents.js"></script>
   <script src="scripts/Springfield_wu.js"></script>	
-
+<script src="scripts/wayfinding.js"></script>
 </body>
-	<script src="scripts/wayfinding.js"></script>
+	
 </html>

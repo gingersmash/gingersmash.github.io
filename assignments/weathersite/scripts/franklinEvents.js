@@ -2,7 +2,7 @@
 
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
-request.open('GET', requestURL, true);
+request.open('POST', requestURL, true);
 
 request.onreadystatechange = function() {
 	if(request.readyState == 4 && request.status == 200){
