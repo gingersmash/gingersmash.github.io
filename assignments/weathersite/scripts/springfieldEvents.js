@@ -15,18 +15,19 @@ request.onload = function() {
 		for (i = 0; i<townObject.towns.length; i++) {
 			townInfo += townObject.towns[3].events[i] + '<br>';
 		}//end of 'for' loop
-		townInfo += '<br>' + '<br>';
-	//console.log(townObject);
+		//townInfo += '<br>' + '<br>';
+	console.log(townObject);
 	
 	
 	 
 	document.getElementById('events').innerHTML = townInfo;
 	
-		
+	
+	
+	
 }//end of onload
 
 request.send(); 
-
 
 
 //wu-information
