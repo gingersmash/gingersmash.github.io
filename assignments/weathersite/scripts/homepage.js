@@ -17,7 +17,7 @@ request.onload = function() {
 			townInfo += 'Annual Rainfall: ' + townObject.towns[i].averageRainfall +'<br>' + '<br>';
 			}//end of 'if' 'else'
 		}//end of 'for' loop
-	//console.log(townInfo);
+	console.log(townInfo);
 	
 	
 	 

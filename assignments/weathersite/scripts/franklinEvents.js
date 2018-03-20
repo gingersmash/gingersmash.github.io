@@ -3,10 +3,13 @@
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
+request.responseType = "json";
+request.send();
 
 request.onload = function() {
-	var townObject = JSON.parse(request.responseText);
-	var townInfo = '<br>';
+	var townObjectText = request.response;
+	var townObject = JSON.parse(townObjectText);
+	
 		
 			townInfo += 'Name: ' + townObject.towns[0].name +'<br>';
 			townInfo += 'Motto: ' + townObject.towns[0].motto +'<br>';
@@ -15,21 +18,22 @@ request.onload = function() {
 			townInfo += 'Annual Rainfall: ' + townObject.towns[0].averageRainfall + '<br>';
 			
 		for (i = 0; i<townObject.towns.length; i++) {
-			townInfo += townObject.towns[1].events[i] + '<br>';
+			townInfo += townObject.towns[0].events[i] + '<br>';
 		}//end of 'for' loop
-		//townInfo += '<br>' + '<br>';
-	//console.log(townObject);
-	
-	
-	 
+		townInfo += '<br>' + '<br>';
+	console.log(townObject);
 	document.getElementById('events').innerHTML = townInfo;
-	
-	
-	
-	
+	console.log(requestURL);
 }//end of onload
+	 
+	
+	
+	
+	
+	
+//end of onload
 
-request.send(); 
+//request.send(); 
 
 
 /*//wu-information
