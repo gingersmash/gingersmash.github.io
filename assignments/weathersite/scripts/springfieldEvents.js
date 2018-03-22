@@ -13,7 +13,7 @@ request.onreadystatechange = function() {
 			townInfo += 'Population: ' + townObject.towns[3].currentPopulation + '<br>';
 			townInfo += 'Annual Rainfall: ' + townObject.towns[3].averageRainfall + '<br>';
 			
-		for (i = 0; i<townObject.towns.length; i++) {
+		for (i = 0; i<townObject.towns[3].events.length; i++) {
 			townInfo += townObject.towns[3].events[i] + '<br>';
 		}//end of 'for' loop
 		//townInfo += '<br>' + '<br>';
