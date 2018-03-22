@@ -17,7 +17,7 @@ request.onreadystatechange = function() {
 			townInfo += townObject.towns[3].events[i] + '<br>';
 		}//end of 'for' loop
 		//townInfo += '<br>' + '<br>';
-	console.log(townObject);
+	console.log(townInfo);
 	
 	
 	 

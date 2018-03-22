@@ -21,9 +21,9 @@ request.onreadystatechange = function() {
 			
 		}//end of 'for' loop
 		townInfo += '<br>' + '<br>';
-	console.log(townObject);
+	console.log(townInfo);
 	document.getElementById('events').innerHTML = townInfo;
-	console.log(requestURL)
+	//console.log(requestURL)
 		
 	}
 }//end of onload
