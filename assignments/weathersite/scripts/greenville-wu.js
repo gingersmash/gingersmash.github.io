@@ -8,7 +8,7 @@ request.open('GET', requestURL, true);
 
 request.onload = function() {
 	var weatherInfo = JSON.parse(request.responseText);
-	console.log(weatherInfo);
+	//console.log(weatherInfo);
 	 
 	document.getElementById('currentTemp').innerHTML =weatherInfo.current_observation.temp_f ;
 	document.getElementById('currentConditions').innerHTML =weatherInfo.current_observation.weather;
@@ -20,9 +20,9 @@ request.onload = function() {
 	var icon_path = weatherInfo.current_observation.icon_url;
 	
 	var urlString =document.location.href;
-	console.log(urlString);
+	//console.log(urlString);
 	var found = urlString.indexOf("https");
-	console.log(found);
+	//console.log(found);
 	if(found>=0){
 		icon_path = icon_path.replace("http","https");
 	document.getElementById("weather_icon").src = icon_path;
@@ -71,7 +71,7 @@ request_2.open('GET', requestURL_2, true);
 
 request_2.onload = function() {
 	var weatherInfo = JSON.parse(request_2.responseText);
-	console.log(weatherInfo);
+	//console.log(weatherInfo);
 	
 	//day 1 
 	document.getElementById('day0hi').innerHTML=weatherInfo.forecast.simpleforecast.forecastday["0"].high.fahrenheit;

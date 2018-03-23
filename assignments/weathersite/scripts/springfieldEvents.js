@@ -1,12 +1,11 @@
 var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
-console.log(request.readyState);
-	console.log(request.status);
-request.onreadystatechange = function() {
-//request.onload = function() {
+
+//request.onreadystatechange = function() {
+request.onload = function() {
 	
-	if(request.readyState == 4 && request.status == 200){
+	//if(request.readyState === 4 && request.status === 200){
 	var townObject = JSON.parse(request.responseText);
 	var townInfo = '<br>';
 		
@@ -27,10 +26,11 @@ request.onreadystatechange = function() {
 	document.getElementById('events').innerHTML = townInfo;
 	
 	
-	}//end of if
+	//}//end of if
 	
 }//end of onload
-
+	console.log(request.readyState);
+	console.log(request.status);
 request.send(); 
 
 
