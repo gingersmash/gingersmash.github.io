@@ -1,4 +1,4 @@
-@media screen and(min-width:480px){}
+@media screen and (max-width: 480px){
    /* This main css file contains the default rules and is geared toward the small/phone view */
 
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
@@ -82,11 +82,13 @@ section {
     display:inline-block;
     
 } 
-
-    section.forecast {
-        display:none;
+	@media only screen and (max-width=480px){
+	.forecast {
+    display: none;
     }
-
+	}	
+ 
+	
   
 
 
@@ -108,5 +110,5 @@ footer>p {
     text-align:center;
     background-color:#11B9E0;
 } /* This structure refers to p elements that are direct children of the footer element */
-
+}
     /* Other Class Selectors */

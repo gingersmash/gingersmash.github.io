@@ -3,9 +3,7 @@
 }
   nav button { display:none; }  /* hamburger button does not need to be shown */
   
-section.forecast { 
-        display:inline-block;
-}
+
     
     
 
@@ -18,6 +16,9 @@ section.forecast {
     padding:.5em;
  } 
 /* show the 10-day forecast with the medium view and up */
+.forecast { 
+        display:inline-block;
+}
 ul {
     list-style-type: none;
     margin: 0;
