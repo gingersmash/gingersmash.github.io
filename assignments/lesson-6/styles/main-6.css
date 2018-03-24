@@ -1,19 +1,19 @@
-/* This main css file contains the default rules and is geared toward the small/phone view */
-@media screen and (max-width: 37.5em){}
+
+@media screen and (max-width: 480px){
+	/* This main css file contains the default rules and is geared toward the small/phone view */
 * { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
 
-
+/* Declare the base font-family - from google font api or other */
 body {
   font-size:16px;
   font-family:"oxygen", sans-serif;
   padding:1em
-  
-  /* Declare the base font-family - from google font api or other */
 }
 
-header, nav, main, footer { /* the comma means apply the following CSS declarations to all of the listed elements */
+	header, nav, main, footer {} 
+	/* the comma means apply the following CSS declarations to all of the listed elements */
   /* Declare the maximum width and other main element rules to limit the stretch on wide views */
-}
+
 
 header {}
 header h1 {
@@ -29,7 +29,8 @@ header img {
 }
 header .subheading {font-family:"oxygen", sans-serif;
       font-size:2em;
-      text-align:center;}
+      text-align:center;
+}
 nav button {
 	margin: .2rem 2%;
 	background-color: transparent;
@@ -73,17 +74,18 @@ main h2 {
     font-family:"ultra",serif;
     color:#007523;
     text-align:center;}
-main h3 {
-    color:#ff850D;
-}
+
 
 main figure { margin: 0 0 .2rem 2%; width:96%; }
 main figure img { width: 100%; }
 
-
-.forecast {
-    display:none;
+main h3 {
+    color:#ff850D;
 }
+.forecast {
+    display: none;
+    }
+	
 
 section {}
 
@@ -114,5 +116,5 @@ footer>p {
 	display: table;
 	clear: both;
 }
-
+}
 /* Other Class Selectors */

@@ -82,11 +82,11 @@ section {
     display:inline-block;
     
 } 
-	@media only screen and (max-width=480px){
-	.forecast {
+	
+section.forecast {
     display: none;
     }
-	}	
+		
  
 	
   
