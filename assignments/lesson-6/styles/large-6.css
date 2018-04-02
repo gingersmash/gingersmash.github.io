@@ -1,8 +1,8 @@
-@media only screen and (min-width: 64rem) {
+@media only screen and (min-width: 64em) {
   /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
 	nav {}
         
-    nav ul li a{padding: .6rem 1rem;}
+    nav ul li a{padding: .6em 1em;}
      /* hamburger button does not need to be shown */
    
      
