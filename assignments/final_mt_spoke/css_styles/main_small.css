@@ -1,0 +1,311 @@
+/* small phone view css*/
+@media screen and (max-width: 37.5em){}
+
+* { box-sizing: border-box;}  /* This wildcard applies to all elements ensuring a box layout model */
+
+body{
+	font-size:16px;
+	font-family: 'Buda', cursive; 
+	padding:1em;
+}
+
+
+header, nav, main, footer {
+	/*declare a max-width to limit stretch*/
+}
+
+header {}/*end header*/
+@media screen and (max-width: 37.5em){
+figure {
+	display:inline-flex;
+	flex-grow: 2;
+	height: auto;
+	
+	
+	
+}/*end figure*/
+
+	
+	
+.logo img {
+	display:flex;
+	flex-wrap:nowrap;
+	max-width:75%;
+	height:auto;
+	
+	
+	
+	
+}/*end logo*/
+}
+.banner {
+	display:inline;
+	margin:0 0 0 0;
+	border: solid #022b3a .25em;
+	border-radius:.5em;
+}
+figure img {
+	display:flex;
+	flex-flow: row;
+	flex-wrap:nowrap;
+	margin-right:auto;
+	width:100%;
+		
+}
+
+header h1 {
+	display: inline-flex;
+	font-family: 'Luckiest Guy', cursive;
+	font-size:2.5em;
+	padding:.1em;
+	color:#fe9920;
+	background-color:#4da167;
+	border: solid #ec4e20 .05em;
+	border-radius:.2em;
+	
+}/*end header h1*/
+
+.motto {
+	display:inline-flex;
+	flex-wrap:wrap;
+	color:#ec4e20;
+}
+header img {
+	width:100px;
+	height:75px;
+	float:left;
+	padding:.5em;
+}
+main figure { 
+	display: inline-flex;
+	width:100%;
+	justify-content:center;
+	flex-grow: 10;
+	}/*end main figure*/
+
+/*navigation*/
+
+nav button {
+	margin: .2rem 2%;
+	background-color: transparent;
+	border: none;
+	font-size: 1.6rem;
+	color:#555;
+}/*end nav button*/
+
+nav.container {
+    display:flex;
+	flex-direction:column;
+    background-color: #022b3a;
+}/*end nav container*/
+
+nav ul {
+    list-style-type: none;
+	padding: 0;
+    margin: 0;    
+}/*end nav ul*/
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+	background-color: #4da167;
+    display:flex;
+	padding: .8rem 2%;
+    margin:0;
+	border-top: 1px solid rgba(0,0,0,0.3);
+}/*end nav ul li a*/
+
+nav ul li.active a {background-color: rgba(0,0,0,0.2);}
+nav ul li a:hover {background-color: rgba(0,0,0,0.1);}
+nav ul.hide{display: none;}
+
+main{
+	display:inline-grid;
+	
+}
+main h2 {
+	font-family: 'Luckiest Guy', cursive;
+	color:#022b3a;
+}/*end main h2*/
+
+/*events/tours main section*/
+ section  {
+	margin:.5em;
+	padding:0;
+	border-radius:.5em;
+}/*end section*/
+
+.abouthead {
+	color:#fe9920;
+	border-radius:.5em;
+	
+}
+main h3 {
+	font-family: 'Luckiest Guy', cursive;
+	border:solid #022b3a .25em;
+	padding:.5em;
+	border-radius:.5em;
+	margin:2em 0em 0;
+
+}/*end main h3*/
+
+.about {
+	border:#fe9920 solid .5em;
+	padding:.5em;
+	border-radius: .5em;
+}/*end about*/
+
+@media only screen and (max-width:37.5em){
+	.photos {
+		display:grid;
+		grid-template-columns:100%;
+		grid-auto-rows:minmax(100px, auto);
+	}/*end events img*/
+}/*end media query*/
+
+.events, .tours, .bikes {
+	margin:.5em;
+	padding:0;
+	border: solid .25em #022b3a ;
+	border-radius:.5em;
+}/*end events, tours bikes*/
+.hours {
+	border:solid #ec4e20 .5em;
+	border-radius:.5em;
+	padding:.5em;
+	
+}/*end hours*/
+
+.storehours, divide {
+	color:#ec4e20;
+	
+}/*end storehours*/
+	
+footer  {
+	
+	border:solid .25em #4da167;
+	border-radius:.5em;
+	
+}/*end footer*/		
+
+.about, .hours, footer {
+	margin:.5em;
+}/*end about, hours, footer*/
+
+
+
+/*ADVENTURE TOURS PAGE*/
+.sponsor {
+	font-family: 'Luckiest Guy', cursive;
+	color:#ec4e20;
+}
+.register {
+	color:#ec4e20;
+}
+.divide {
+	color:#022b3a;
+	border-color:#ec4e20;
+	margin:auto;
+}/*end divide*/
+
+.divide_info {
+	border: solid #ec4e20;
+	border-radius:.5em;
+	padding:.5em;
+	
+}
+
+/*registration form*/
+
+
+
+fieldset {
+	background-color:beige ;
+	border-radius: .8em;
+	margin: 1.5em 0;
+	border: #4da167 solid .5em;
+}
+legend {
+	color: white;
+	margin-left:3%;
+	padding: .5em;
+	border: #4da167 solid .1em;
+	background-color:#fe9920;
+	border-radius: .5em;
+	
+}
+
+label {
+	display: block;
+	margin: 1em;
+}
+
+label span {
+	display: block;
+	font-size: .8em;
+	padding-top: .9em;
+	padding-bottom: .2em;
+	
+}
+
+
+input.submitbtn {
+	-webkit-appearance:none;
+	color: white;
+	background: #4da167;
+	border: solid 1px black;
+	border-radius: 5px;
+	width: 30%;
+	max-width: 300px;
+	margin: .5em 0;
+	padding: .6em;
+	box-shadow: 4px 4px 10px gray;
+	
+}
+
+textarea {
+	width: 80%;
+	max-width: 500px;
+	
+}
+
+label input {
+	background-color: mintcream;
+	padding: .3em .3em .3em .2em;
+	border: solid 1px #11B9E0;
+	border-radius: 5.5px;
+	font-size: .9em;
+	width: 90%;
+	max-width: 500px;
+}
+
+/*SALES PAGE*/
+
+
+
+
+
+
+
+
+
+
+
+/**Thank You**/
+#thanks {
+	font-size: 45px;
+	color:#ec4e20;
+}
+p.thanks {
+	font-size: 20px;
+	padding: 0 2em 2em 0;
+	margin:0 0 0 0
+}
+
+.team {
+   font-family: 'Luckiest Guy', cursive;
+   font-size:1em;
+   color: #fe9920;
+	background-color:#4da167
+   
+}

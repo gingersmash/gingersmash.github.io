@@ -1,0 +1,43 @@
+@media only screen and (min-width: 64rem) {
+  /*home screen*/
+	nav {}
+        nav ul li a{
+		padding: .4rem 1rem;
+		margin: auto;
+		display: flex;
+		align-content: center;
+		}/*end nav ul li a*/
+     
+}/*end @media 64rem*/
+
+
+	
+
+	.banner {
+		max-width:98%;
+		display:inline-flex;
+		align-content:center;
+		flex:90%;
+		margin:.5em;
+		
+		}/*end banner*/
+
+	figure img{
+		display:flex;
+		flex-wrap:wrap;
+		align-self:center;
+		width:100%;
+		height:inherit;
+			
+	}/*end figure img*/
+
+@media only screen and (min-width: 64rem) {
+	.tours, .events .bikes {
+		display:grid;
+		grid-template-columns: auto;
+	}
+}
+
+
+
+	

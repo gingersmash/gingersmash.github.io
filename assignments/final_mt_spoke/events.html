@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>The Mountain Spoke</title>
+       <meta name="author" content="Ashley Cammack">
+       <meta name="description" content="mountain-biking">
+		
+		<!--external google fonts-->
+		<link href="https://fonts.googleapis.com/css?family=Buda:300" rel="stylesheet">
+		
+		<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+		
+		<!--External Style Sheets -->
+		
+		<!-- normalize -->
+		<link href="css_styles/normalize.css" rel="stylesheet">
+		
+		<!-- default styles - small/phone views -->
+        <link href="css_styles/main_small.css" rel="stylesheet"> 
+		
+		<!-- medium/tablet views -->
+        <link href="css_styles/medium.css" rel="stylesheet"> 
+		
+		<!-- large/wide/desktop views -->
+        <link href="css_styles/large.css" rel="stylesheet"> 
+		
+	</head>
+		
+	
+	<body>
+		<header>
+			<figure class="logo">
+				<img src="images/mtspoke_logo.png" alt="logo">
+			</figure>
+			<h1>The Mountain Spoke</h1>
+			<h2 class="motto">"Where the adventure begins!"</h2>
+		</header>
+		
+	<!--site navigation (placeholder references)-->
+	<nav class="clearfix">
+      <button onclick="toggleMenu()">&#9776;</button>
+      <ul id="mainmenu" class="hide">
+    	<li><a href="home.html">Home</a></li>
+    	<li><a href="tours.html">Tours</a></li>
+    	<li><a href="events.html">Events</a></li>
+    	<li><a href="sales.html">Sales</a></li>
+    	<li><a href="services.html">Service</a></li>
+		<li><a href="contact.html">Contact Us</a></li>
+     </ul>		
+   </nav>
+		
+	<!--main body content -->
+	<main>
+		<h1 class="sponsor">Sponsored Events</h1>
+		
+		<figure class="banner"> 
+			<img src="images/cont_divide_orig_crop.jpg"  alt="cyclist looking out from mt.peak" sizes="50vw"	srcset="images/cont_divide_200.jpg 200w,
+				   	images/cont_divide_500.jpg 500w, images/cont_divide_1020.jpg 1020w">
+		</figure>
+		<section class="sponsored_events">
+			 
+			<h3 class="divide">Cycle The Continental Divide</h3>
+				<p class="divide_info">This race takes place on a remote trail  spanning along the Great Continental Divide from, Banff, Canada, to Antelope Wells on the US/Mexico border. This is a total of more than 2,768 miles. The entire route is dirt-road and mountain pass riding. The total elevation gain is over 200,000 feet. About 80% of it is composed of county, Forest Service, and Bureau of Land Management dirt and gravel roads. The remaining portion is made up of 10% four-wheel-drive tracks and single track trails, and 10% paved roads. This year celebrates the 20th anniversary of the Great Divide Mountain Bike Route. (GDMBR)If you are looking for an unforgettable adventure, sign up now for the ride of your life.</p>
+					<h4>Race Details</h4>
+						<ul>
+							<li>When: June 8, 2018</li>
+							<li>Time: 8:00 AM</li>
+							<li>Cost: FREE </li>
+							<li>Where: All participants will meet at the Grand Depart in Banff, Alberta, Canada</li>
+						</ul>
+		</section>
+		
+	
+	   <h2 class="register">Registration</h2>
+	  <form action="thanks.html" method="post"  name="register" id="form">
+		 <fieldset>
+			<legend><span>Personal Information</span></legend>
+			   <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z .-]{5,99}" required></label>
+			   <label><span>email:</span><input name="email" type="email" value="" placeholder="john@google.com" required></label>
+			   <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="2345677890" required></label>
+			   <label><span>Date of Birth:</span><input required name="birthdate" type="date" value=""></label>
+				<label><span>Home State/Country:</span><input required name="home-state" type="text" value=""></label>
+			
+		  </fieldset>
+		
+	  	<fieldset>
+		  <legend>Special Accomodations/Comments</legend>
+			 <textarea name="comments" form="form"></textarea>
+	    </fieldset>
+		   
+		   <input type="submit" value="Submit" class="submitbtn">
+		  
+	  </form>
+  
+   
+	     
+	  	
+  
+
+		<!--<aside>
+				The Mountain Spoke<br>
+        		3950 Valley Commons Drive<br>
+				Bozeman,MT 83454<br>
+        		(666)777-8888<br>
+        		mtspoke@google.com
+    	</aside>-->
+		
+	</main>	
+		
+	<!--footer -->
+		<footer>
+			<a href="resources.html">Resources</a>
+			 <p class="footer-bar">&copy;2018 All Rights Reserved |  Ashley Cammack | <span id="currentdate">Current Date Placeholder</span></p>
+		</footer>
+		
+	<!--external javaScript links -->
+		<script src="js_scripts/hamburger.js"></script>
+		<script src="js_scripts/currentdate.js"></script>
+		<!--wayfinding-->
+		<script src="js_scripts/wayfinding.js"></script>
+	</body>
+	
+	
+	
+</html>

@@ -1,0 +1,30 @@
+{
+	"services" : [
+	{
+		"service" : "Basic Tune-Up",
+		"price" : "$39.99",
+		
+		
+	},
+	{
+		"service" :  "Premium Tune-Up",
+		"price" : "$69.99",
+	},
+	{
+		"service" :  "Adjust/install Rim Brake Pads",
+		"price" : "$9.99",
+	},
+	{
+		"service" :  "Install Inner Tube",
+		"price" : "$5.99",
+	},
+	{
+		"service" :  "Repair Inner Tube",
+		"price" : "$8.99",
+	},
+	{
+		"service" :  "Install Spoke (each)",
+		"price" : "$5.99",
+	}
+	]
+}
