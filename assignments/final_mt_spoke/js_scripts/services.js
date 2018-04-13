@@ -1,18 +1,23 @@
-var requestURL = 'https://gingersmash.github.io/assignments/final_mt_spoke/data/services.json';
+townData = documentquerySelector('.sgrid');
+
+var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
 var request = new XMLHttpRequest();
 request.open('GET', requestURL, true);
+request.responseType = 'json';
+request.send();
+request.onload = function(); 
 
-request.onload = function() {
-	var jsonObject = JSON.parse(request.responseText);
-	var serviceInfo = '<br>';
+
 	
-		for (i = 0; i < jsonObject.services.length; i++) {
+		for (i = 0; i < townObject.towns.length; i++) {
 			if (i == 2){}
 			
 			else {
-			serviceInfo += 'Service: ' + jsonObject.services[i].service +'<br>';
-			serviceInfo += 'Price: ' + jsonObject.services[i].price +'<br>';
-			
+			townInfo += 'Name: ' + townObject.towns[i].name +'<br>';
+			townInfo += 'Motto: ' + townObject.towns[i].motto +'<br>';
+			townInfo += 'yearFounded: ' + townObject.towns[i].yearFounded +'<br>';
+			townInfo += 'Population: ' + townObject.towns[i].currentPopulation +'<br>';
+			townInfo += 'Annual Rainfall: ' + townObject.towns[i].averageRainfall +'<br>' + '<br>';
 			}//end of 'if' 'else'
 		}//end of 'for' loop
 	console.log(townInfo);

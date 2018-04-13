@@ -1,10 +1,9 @@
-{
-	"services" : [
+myFunction([
+	
 	{
 		"service" : "Basic Tune-Up",
 		"price" : "$39.99",
-		
-		
+			
 	},
 	{
 		"service" :  "Premium Tune-Up",
@@ -26,5 +25,4 @@
 		"service" :  "Install Spoke (each)",
 		"price" : "$5.99",
 	}
-	]
-}
+	])
