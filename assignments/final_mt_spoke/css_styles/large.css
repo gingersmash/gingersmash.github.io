@@ -1,5 +1,11 @@
 @media only screen and (min-width: 64rem) {
   /*home screen*/
+	
+.logo {
+	max-width: 50%;
+	flex-wrap: wrap;
+}	
+	
 	nav {}
         nav ul li a{
 		padding: .4rem 1rem;
@@ -9,12 +15,23 @@
 		}/*end nav ul li a*/
      
 }/*end @media 64rem*/
+@media only screen and (min-width: 64rem){
+header h1 {
+	display: inline-flex;
+	max-width: 35%;
+	align-self: center;
+}/*end header*/
+}/*end @media*/
+
+header img{
+	display: grid;
+	grid-auto-rows:minmax(300px, auto);
+}
 
 
-	
 
 	.banner {
-		max-width:98%;
+		max-width:100%;
 		display:inline-flex;
 		align-content:center;
 		flex:90%;
@@ -22,14 +39,14 @@
 		
 		}/*end banner*/
 
-	figure img{
-		display:flex;
-		flex-wrap:wrap;
-		align-self:center;
-		width:100%;
-		height:inherit;
-			
-	}/*end figure img*/
+
+	main figure {
+		display:grid;
+		grid-template-columns: auto;
+		max-width:75%;
+		height: auto;
+	
+	}/*end main figure*/
 
 @media only screen and (min-width: 64rem) {
 	.tours, .events .bikes {
@@ -39,5 +56,16 @@
 }
 
 
+/***************Sales*****************/
+@media only screen and (max-width: 80rem){
 
+.products {
+	display: grid:
 	
+}
+
+.products h3 {
+	text-align: left;
+	border: none;
+	}	
+}

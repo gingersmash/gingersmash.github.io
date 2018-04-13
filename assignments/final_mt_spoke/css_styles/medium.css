@@ -46,14 +46,13 @@ nav.container {
 	}/*end banner*/
 } /*end media query min-width*/
 	
-	@media screen and (min-width:37.5em){
-		.logo img {
-	display:flex;
+	header img {
+	display:grid;
 	flex-wrap:wrap;
-	max-width:75%;
+	max-width:45%;
 	height:auto;
-		}/*end logo*/
-	}/*end media query*/
+}
+
 
 
 	.events, .tours, .bikes {
