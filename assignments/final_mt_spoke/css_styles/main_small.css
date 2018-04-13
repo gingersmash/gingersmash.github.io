@@ -31,7 +31,7 @@ header, nav, main, footer {
 
 header h1 {
 	display:grid;
-	max-width:100%;
+	min-width:50%;
 	font-family: 'Luckiest Guy', cursive;
 	padding:.75em;
 	color:#fe9920;
@@ -49,7 +49,7 @@ header h1 {
 }
 
 main {}
- main figure img { 
+ main img { 
 	display: flex;
 	width:100%;
 	justify-content: center;
@@ -372,4 +372,21 @@ td {
 }
 .tuneUp {
 	border-color:#fe9920;
+}
+
+
+
+/**** SALES****/
+
+a.img {
+	width: 40%;
+}
+a.arrow {
+	display: none;
+	margin-right: 40px;
+}
+.slider_container img {
+	display:none;
+	position:absolute;
+	border:1px solid #fe9920;
 }
