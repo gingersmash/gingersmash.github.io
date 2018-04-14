@@ -142,7 +142,7 @@ main h3 {
 .events, .tours, .bikes {
 	display: grid;
 	margin:.5em;
-	padding:none;
+	
 
 	border: solid .25em #022b3a ;
 	border-radius:.5em;
@@ -229,7 +229,7 @@ label span {
 
 
 input.submitbtn {
-	-webkit-appearance:none;
+	
 	color: white;
 	background: #4da167;
 	border: solid 1px black;
@@ -329,6 +329,10 @@ p.thanks {
 h4 {
 	font-size: 24px;
 	
+}
+.message {
+	width:100%;
+	height:200px;
 }
 
 /***** Services page *****/
